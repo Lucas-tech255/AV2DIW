@@ -1,0 +1,59 @@
+
+
+:root {
+  --madeira: #38210f;
+  --creme: #f3e6c5;
+  --ouro: #f6d47a;
+  --vermelho: #b32d23;
+  --bs-body-font-family: Arial, sans-serif;
+  --bs-body-color: var(--creme);
+  --bs-warning-rgb: 246, 212, 122;
+  --bs-danger-rgb: 179, 45, 35;
+}
+
+body {
+ 
+  background-color: #593817;
+}
+
+.navbar {
+  background-color: var(--madeira);
+}
+
+.navbar-brand,
+.navbar-brand:hover,
+.navbar-brand:focus,
+main>h1,
+main section>h2 {
+  color: var(--ouro);
+}
+
+.navbar-brand,
+h1,
+h2,
+h3,
+#total {
+  font-family: Georgia, serif;
+}
+
+
+.navbar .nav-link.active {
+  color: var(--madeira);
+  background-color: var(--ouro);
+}
+
+.card,
+.modal-content {
+  color: var(--madeira);
+  background-color: var(--creme);
+}
+
+.btn-danger {
+  --bs-btn-bg: var(--vermelho);
+  --bs-btn-border-color: var(--vermelho);
+}
+
+.progress {
+  --bs-progress-bg: #d3c5a5;
+  --bs-progress-bar-bg: #65401e;
+}

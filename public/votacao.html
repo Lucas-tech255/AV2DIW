@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A Fazenda 2026 - votacao</title>
+
+  <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="lib/bootstrap/bootstrap.bundle.min.js" defer></script>
+  <script type="module" src="js/participantes.js"></script>
+</head>
+
+<body>
+  <header class="border-bottom border-warning border-3">
+    <nav class="navbar navbar-expand-md" data-bs-theme="dark" aria-label="Menu principal">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+          <img src="img/logo-fazenda.jpg" alt="A Fazenda" width="74" height="56" class="rounded object-fit-cover">
+          Votação 2026
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+          aria-controls="menu" aria-expanded="false" aria-label="Alternar menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto gap-1">
+            <li class="nav-item"><a class="nav-link rounded px-3" href="index.html">Início</a></li>
+            <li class="nav-item"><a class="nav-link rounded px-3 active" aria-current="page"
+                href="votacao.html">Votar</a></li>
+            <li class="nav-item"><a class="nav-link rounded px-3" href="resultado.html">Resultado</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="container py-5">
+    <h1>Quem você quer eliminar?</h1>
+    <p>Cada clique conta um voto para tirar o peão da fazenda</p>
+    <div id="mensagem" role="status"></div>
+    <div id="roca" class="row row-cols-1 row-cols-md-3 g-4"></div>
+    <section class="mt-5">
+      <h2>Demais peões</h2>
+      <p>Fora da roça nesta semana, não podem receber votos</p>
+      <div id="demais" class="row row-cols-2 row-cols-sm-3 row-cols-lg-5 g-3"></div>
+    </section>
+  </main>
+</body>
+
+</html>
